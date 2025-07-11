@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+   <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="teachers">
+
+   <h1 class="heading">Todos os exercicios e desafios</h1>
+
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="procurar desafios..." required maxlength="100">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
+
+   <div class="box-container">
+
+      <div class="box offer">
+         <h3>Estudar antes?</h3>
+         <p>Gostaria de estudar um pouco antes de começar?.</p>
+         <a href="courses.html" class="inline-btn">ver disciplinas</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+<!-- codigos javascript  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

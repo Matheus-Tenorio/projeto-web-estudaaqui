@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+   <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL-->
+<section class="about">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/about-img.svg" alt="">
+      </div>
+
+      <div class="content">
+         <h3>Quem somos nos?</h3>
+         <p>Somos uma instituição de ensino comprometida com a excelência educacional, oferecendo uma formação de qualidade que estimula o pensamento crítico, a criatividade e o desenvolvimento integral dos alunos. Atuamos com responsabilidade social, inovação pedagógica e foco na construção de uma sociedade mais justa, ética e preparada para os desafios do futuro.</p>
+         <a href="courses.html" class="inline-btn">Nossas Disciplinas</a>
+      </div>
+
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-graduation-cap"></i>
+         <div>
+            <h3>+1k</h3>
+            <p>conteúdos</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-user-graduate"></i>
+         <div>
+            <h3>+10k</h3>
+            <p>estudantes</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-chalkboard-user"></i>
+         <div>
+            <h3>38</h3>
+            <p>docentes</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-briefcase"></i>
+         <div>
+            <h3>90%</h3>
+            <p>empregabilidade</p>
+         </div>
+      </div>
+
+   </div>
+
+</section> 
+
+<section class="reviews">
+
+   <h1 class="heading">Avaliações de nossos estudantes</h1>
+
+   <div class="box-container">
+
+      <!-- AVALIAÇÃO 1-->
+      <div class="box">
+         <p> A plataforma online é super intuitiva e fácil de usar. Consigo acessar as aulas, materiais e atividades sem complicação nenhuma.</p>
+         <div class="student">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Geovana Martins</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- AVALIAÇÃO 2-->
+      <div class="box">
+         <p>Gosto bastante da organização do ambiente virtual. Tudo fica separado por matéria, e as videoaulas rodam direitinho, até no celular!</p>
+         <div class="student">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Lucas Ernanes</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- AVALIAÇÃO 3-->
+      <div class="box">
+         <p>Sou novo na escola e fiquei surpreso com a plataforma. É bem organizada, os professores explicam tudo direitinho e consigo acompanhar as aulas sem me perder. Está me ajudando muito nessa fase de adaptação</p>
+         <div class="student">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Gabriel Luis</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- AVALIAÇÃO 4-->
+      <div class="box">
+         <p>Uso a plataforma desde o primeiro ano e ela só melhorou com o tempo. Hoje está mais rápida, com mais recursos e muito mais prática. Dá pra ver que a escola realmente se preocupa em oferecer um ambiente digital de qualidade.</p>
+         <div class="student">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Helena Rocha</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- AVALIAÇÃO 5-->
+      <div class="box">
+         <p>A plataforma foi essencial na minha preparação para o vestibular. Tinha acesso fácil a todos os conteúdos, simulados e revisões. Mesmo fora da sala de aula, me sentia amparada e bem guiada</p>
+         <div class="student">
+            <img src="images/pic-6.jpg" alt="">
+            <div>
+               <h3>Felipe da Silva</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- AVALIAÇÃO 6-->
+      <div class="box">
+         <p>Cheguei na escola esse ano e estava com medo de me perder nas aulas online, mas a plataforma me surpreendeu. É tudo muito bem explicado, fácil de navegar e os professores são super atenciosos. Já me sinto parte da escola</p>
+         <div class="student">
+            <img src="images/pic-7.jpg" alt="">
+            <div>
+               <h3>Laura Firmino</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+<!-- codigos em javascripts  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

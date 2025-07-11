@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+   <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>atualizar perfil</h3>
+      <p>atualizar nome</p>
+      <input type="text" name="name" placeholder="digite seu nome" maxlength="50" class="box">
+      <p>atualizar email</p>
+      <input type="email" name="email" placeholder="digite seu email" maxlength="50" class="box">
+      <p>senha atual</p>
+      <input type="password" name="old_pass" placeholder="digite sua senha atual" maxlength="20" class="box">
+      <p>nova senha</p>
+      <input type="password" name="new_pass" placeholder="digite sua nova senha" maxlength="20" class="box">
+      <p>confirme senha</p>
+      <input type="password" name="c_pass" placeholder="confirme sua nova senha" maxlength="20" class="box">
+      <p>atualizar foto</p>
+      <input type="file" accept="image/*" class="box">
+      <input type="submit" value="atualizar perfil" name="submit" class="btn">
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+
+<!-- codigos javascript  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
