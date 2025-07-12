@@ -11,6 +11,10 @@
 
    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/kanban.css">
+
+    <script src="js/kanban.js" defer></script>
+
 </head>
 <body>
 
@@ -90,13 +94,31 @@
 </section>
 
 
+<section>
 
+   <h2 class="heading">Quadro Kanban</h2>
 
+   <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="Nova Tarefa..." id="todo-input" />
+        <button type="submit">Adicionar +</button>
+      </form>
 
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">A FAZER</h3>
+        </div>
 
+        <div class="swim-lane">
+          <h3 class="heading">FAZENDO</h3>
+        </div>
 
-
-
+        <div class="swim-lane">
+          <h3 class="heading">FEITO</h3>
+        </div>
+      </div>
+    </div>
+</section>
 
 
 
