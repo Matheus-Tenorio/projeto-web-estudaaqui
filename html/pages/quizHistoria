@@ -6,9 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Página Inicial</title>
 
-   <!-- link para a fonte usada -->
+    <!-- link para a fonte usada -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
+
+   
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" href="../../css/body.css">
@@ -26,9 +28,9 @@
     <link rel="stylesheet" href="../../css/teachersprofile.css">
     <link rel="stylesheet" href="../../css/usersprofile.css">
     <link rel="stylesheet" href="../../css/videos.css">
-   
 
-    <script src="js/kanban.js" defer></script>
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
 
 </head>
 <body>
@@ -90,52 +92,73 @@
 </div>
 
 
-<!-- CORPO principal-->
-<section class="user-profile">
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
 
-   <h1 class="heading">Seu perfil</h1>
+    <h1 class="heading">Quiz de Português 🧠</h1>
 
-   <div class="info">
-
-      <div class="user">
-         <img src="images/pic-1.jpg" alt="">
-         <h3>NOME AQUI</h3>
-         <p>estudante</p>
-         <a href="update.html" class="inline-btn">atualizar perfil</a>
-      </div>
-
-   </div>
-
-</section>
-
-
-<section>
-
-   <h2 class="heading">Quadro Kanban</h2>
-
-   <div class="board">
-      <form id="todo-form">
-        <input type="text" placeholder="Nova Tarefa..." id="todo-input" />
-        <button type="submit">Adicionar +</button>
-      </form>
-
-      <div class="lanes">
-        <div class="swim-lane" id="todo-lane">
-          <h3 class="heading">A FAZER</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FAZENDO</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FEITO</h3>
-        </div>
-      </div>
+    <div class="quiz-question">
+        <h3 class="question-title">1. Que civilização inventou o alfabeto que utilizamos? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) civilização Inca</li>
+            <li data-option="B" data-correct="true">B) civilização Fenícia</li>
+            <li data-option="C">C) civilização Persa</li>
+            <li data-option="D">D) Povos Maias</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
     </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. Em que ano Cristóvão Colombo achou às Américas?  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) 1500</li>
+            <li data-option="B">B) 1888</li>
+            <li data-option="C" data-correct="true">C) 1492</li>
+            <li data-option="D">D) 1450</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. Em que período da Pré-história foi descoberto o fogo?  </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Peleolítico</li>
+            <li data-option="B">B) Idade dos Metais</li>
+            <li data-option="C">C) Idade Antiga</li>
+            <li data-option="D">D) Neolítico</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Quem foi Júlio César?  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Imperador Babilonico</li>
+            <li data-option="B">B) Imperador Germanico</li>
+            <li data-option="C">C) Imperador Britanico</li>
+            <li data-option="D" data-correct="true">D) Imperador Romano</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. O que foi a Crise de 1929(ou a Grande Depressão)? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Primeira guerra mundial</li>
+            <li data-option="B" data-correct="true">B) Crise financeira nos Estados Unidos</li>
+            <li data-option="C">C) Guerra pelo movimento Feminista</li>
+            <li data-option="D">D) Revolução Industrial</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+    
+
 </section>
-
-
 
 
 
@@ -146,9 +169,10 @@
   </div>
 </footer>
 
+
 <!-- codigos javascript  -->
- <script src="../../js/kanban.js"></script>
 <script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
 
    
 </body>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+    <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+   
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
+
+    <h1 class="heading">Quiz de Português 🧠</h1>
+
+    <div class="quiz-question">
+        <h3 class="question-title">1. Qual a alternativa em que a palavra está escrita corretamente?</h3>
+        <ul class="options-list">
+            <li data-option="A">A) Ratficar</li>
+            <li data-option="B" data-correct="true">B) Hesitar</li>
+            <li data-option="C">C) Imcerteza</li>
+            <li data-option="D">D) Duvida</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. Identifique a figura de linguagem presente na frase: "Aquela festa foi um mar de gente!" </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Eufemismo</li>
+            <li data-option="B">B) Pleonasmo</li>
+            <li data-option="C" data-correct="true">C) Metáfora</li>
+            <li data-option="D">D) Hipérbole</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. Qual é a classe gramatical da palavra destacada na frase: "Ela comprou um vestido vermelho." </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Adjetivo</li>
+            <li data-option="B">B) Substantivo</li>
+            <li data-option="C">C) Acentuação</li>
+            <li data-option="D">D) Numeral</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Complete a lacuna com a forma verbal correta: "Se ele ____ (saber) do ocorrido, teria ajudado." </h3>
+        <ul class="options-list">
+            <li data-option="A">A) sabia</li>
+            <li data-option="B">B) sabido</li>
+            <li data-option="C">C) saberá</li>
+            <li data-option="D" data-correct="true">D) soubesse</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. Identifique a alternativa em que há uma concordância verbal inadequada: </h3>
+        <ul class="options-list">
+            <li data-option="A">A) O carro e a moto foram vendidos ontem.</li>
+            <li data-option="B" data-correct="true">B) Todos os dias, o menino e a menina estuda juntos.</li>
+            <li data-option="C">C) Ele e ela viajarão para o exterior.</li>
+            <li data-option="D">D) O professor e a professora são muito competentes.</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">6. Qual é o objeto direto na frase: "O professor ensinou a matéria com dedicação." </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Dedicação</li>
+            <li data-option="B">B) Ensinar</li>
+            <li data-option="C" data-correct="true">C) A matéria</li>
+            <li data-option="D">D) Professor</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">7. Qual a alternativa que apresenta uma oração subordinada adverbial concessiva? </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Embora tenha estudo, não passou no enxame</li>
+            <li data-option="B">B) O livro que comprei é muito interessante</li>
+            <li data-option="C">C) Ele gosta de música, pois toca violão</li>
+            <li data-option="D">D) Preciso ir a escola amanhã</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">8. Assinale a alternativa que apresenta um exemplo de polissíndeto: </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Ele saiu da escola, e aprendeu</li>
+            <li data-option="B">B) Fui a loja, comprei alho, sai da loja</li>
+            <li data-option="C" data-correct="true">C) Gosto de ler, de estudar, de aprender.</li>
+            <li data-option="D">D) Ele é inteligente, esforçado e dedicado</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">9. Assinale a alternativa em que a palavra destacada é um pronome pessoal oblíquo átono: </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Eu sempre acreditei nele</li>
+            <li data-option="B">B) Ele sempre ajuda nós</li>
+            <li data-option="C">C) Esta é a cada dela</li>
+            <li data-option="D" data-correct="true">D) Eu me lembrei do seu aniversário</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">10. Identifique a alternativa que apresenta um exemplo de pleonasmo: </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Olá, pessoal</li>
+            <li data-option="B" data-correct="true">B) Subir para cima</li>
+            <li data-option="C">C) Sorriso nos lábios</li>
+            <li data-option="D">D) Gritar alto</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+
+<!-- codigos javascript  -->
+<script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
+
+   
+</body>
+</html>

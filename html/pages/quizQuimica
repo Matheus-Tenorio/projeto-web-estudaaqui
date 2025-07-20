@@ -6,9 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Página Inicial</title>
 
-   <!-- link para a fonte usada -->
+    <!-- link para a fonte usada -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
+
+   
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" href="../../css/body.css">
@@ -26,9 +28,9 @@
     <link rel="stylesheet" href="../../css/teachersprofile.css">
     <link rel="stylesheet" href="../../css/usersprofile.css">
     <link rel="stylesheet" href="../../css/videos.css">
-   
 
-    <script src="js/kanban.js" defer></script>
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
 
 </head>
 <body>
@@ -90,52 +92,72 @@
 </div>
 
 
-<!-- CORPO principal-->
-<section class="user-profile">
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
 
-   <h1 class="heading">Seu perfil</h1>
+    <h1 class="heading">Quiz de Português 🧠</h1>
 
-   <div class="info">
-
-      <div class="user">
-         <img src="images/pic-1.jpg" alt="">
-         <h3>NOME AQUI</h3>
-         <p>estudante</p>
-         <a href="update.html" class="inline-btn">atualizar perfil</a>
-      </div>
-
-   </div>
-
-</section>
-
-
-<section>
-
-   <h2 class="heading">Quadro Kanban</h2>
-
-   <div class="board">
-      <form id="todo-form">
-        <input type="text" placeholder="Nova Tarefa..." id="todo-input" />
-        <button type="submit">Adicionar +</button>
-      </form>
-
-      <div class="lanes">
-        <div class="swim-lane" id="todo-lane">
-          <h3 class="heading">A FAZER</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FAZENDO</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FEITO</h3>
-        </div>
-      </div>
+    <div class="quiz-question">
+        <h3 class="question-title">1. Qual óxido é responsável por causar a chuva ácida quando reage com a água na atmosfera? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Monoxido de Carbono</li>
+            <li data-option="B" data-correct="true">B) Dioxido de Enxofre</li>
+            <li data-option="C">C) Oxido de zinco</li>
+            <li data-option="D">D) Monoxido de Enxofre</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
     </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. Qual é a fórmula química do ácido sulfúrico? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) H2SO3</li>
+            <li data-option="B">B) H20</li>
+            <li data-option="C" data-correct="true">C) H2SO4</li>
+            <li data-option="D">D) HNO3</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. Qual óxido é responsável por causar a chuva ácida quando reage com a água na atmosfera?  </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Trioxido de Enxofre</li>
+            <li data-option="B">B) Oxido de nitrogenio</li>
+            <li data-option="C">C) Oxido de ferro</li>
+            <li data-option="D">D) Trioxido de carbono</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Qual é o sal resultante da reação entre o ácido clorídrico (HCl) e a amônia (NH3)? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) HcL2</li>
+            <li data-option="B">B) NaOH</li>
+            <li data-option="C">C) HCL2</li>
+            <li data-option="D" data-correct="true">D) NH4CL</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. Qual é o sal formado pela reação entre ácido sulfúrico (H2SO4) e hidróxido de sódio (NaOH)? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) NaCL4</li>
+            <li data-option="B" data-correct="true">B) NaHSO4</li>
+            <li data-option="C">C) Na2S</li>
+            <li data-option="D">D) H2OH</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
 </section>
-
-
 
 
 
@@ -146,9 +168,10 @@
   </div>
 </footer>
 
+
 <!-- codigos javascript  -->
- <script src="../../js/kanban.js"></script>
 <script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
 
    
 </body>

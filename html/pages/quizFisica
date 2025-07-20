@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+    <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+   
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
+
+    <h1 class="heading">Quiz de Português 🧠</h1>
+
+    <div class="quiz-question">
+        <h3 class="question-title">1. O que é uma luz policromática? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Aquela composta de várias cores</li>
+            <li data-option="B" data-correct="true">B) Aquela composta de apenas uma cor</li>
+            <li data-option="C">C) Aquela Lz que troca de cor sozinha</li>
+            <li data-option="D">D) N.D.A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. Por quem foi introduzida, em 1798, a ideia de que o calor é energia?</h3>
+        <ul class="options-list">
+            <li data-option="A">A) Galileu Galilei</li>
+            <li data-option="B">B) Tesla</li>
+            <li data-option="C" data-correct="true">C) Benjamin Thompson</li>
+            <li data-option="D">D) Isaac Newton</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. Dois corpos sólidos receberam a mesma quantidade de calor e sofreram o mesmo aumento de temperatura. Podemos concluir que os corpos tem mesmo(a):</h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Cpacidade Térmica</li>
+            <li data-option="B">B) Calor Genérico</li>
+            <li data-option="C">C) Calor Específico</li>
+            <li data-option="D">D) Densidade</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Dois fatores que influem na resistência: " </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Densidade e Área da seção do condutor</li>
+            <li data-option="B">B) Peso do contudor e Densidade</li>
+            <li data-option="C">C) Densidade e comprimento</li>
+            <li data-option="D" data-correct="true">D) Comrpimento e área da seção do contudor</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. Qual é a unidade de medida da resistência elétrica? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Ampére</li>
+            <li data-option="B" data-correct="true">B) Ohm</li>
+            <li data-option="C">C) Ohmer</li>
+            <li data-option="D">D) Volt</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">6. Qual é a lei de Newton que descreve a ação e reação entre dois corpos?  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) primeira lei de Newton</li>
+            <li data-option="B">B) segunda lei de Newton</li>
+            <li data-option="C" data-correct="true">C) terceira lei de Newton</li>
+            <li data-option="D">D) quarta lei de Newton</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">7. Qual é a unidade de medida da energia? </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Joule</li>
+            <li data-option="B">B) Newton</li>
+            <li data-option="C">C) Celsius</li>
+            <li data-option="D">D) Watt</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">8. Qual é o nome dado à propriedade dos fluidos de resistir ao movimento relativo entre suas camadas? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Pressão</li>
+            <li data-option="B">B) Gravidade</li>
+            <li data-option="C" data-correct="true">C) Viscosidade</li>
+            <li data-option="D">D) Densidade</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+
+<!-- codigos javascript  -->
+<script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
+
+   
+</body>
+</html>

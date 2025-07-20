@@ -6,9 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Página Inicial</title>
 
-   <!-- link para a fonte usada -->
+    <!-- link para a fonte usada -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
+
+   
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" href="../../css/body.css">
@@ -26,9 +28,9 @@
     <link rel="stylesheet" href="../../css/teachersprofile.css">
     <link rel="stylesheet" href="../../css/usersprofile.css">
     <link rel="stylesheet" href="../../css/videos.css">
-   
 
-    <script src="js/kanban.js" defer></script>
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
 
 </head>
 <body>
@@ -90,52 +92,74 @@
 </div>
 
 
-<!-- CORPO principal-->
-<section class="user-profile">
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
 
-   <h1 class="heading">Seu perfil</h1>
+    <h1 class="heading">Quiz de Português 🧠</h1>
 
-   <div class="info">
-
-      <div class="user">
-         <img src="images/pic-1.jpg" alt="">
-         <h3>NOME AQUI</h3>
-         <p>estudante</p>
-         <a href="update.html" class="inline-btn">atualizar perfil</a>
-      </div>
-
-   </div>
-
-</section>
-
-
-<section>
-
-   <h2 class="heading">Quadro Kanban</h2>
-
-   <div class="board">
-      <form id="todo-form">
-        <input type="text" placeholder="Nova Tarefa..." id="todo-input" />
-        <button type="submit">Adicionar +</button>
-      </form>
-
-      <div class="lanes">
-        <div class="swim-lane" id="todo-lane">
-          <h3 class="heading">A FAZER</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FAZENDO</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FEITO</h3>
-        </div>
-      </div>
+    <div class="quiz-question">
+        <h3 class="question-title">1. Os paralelos possuem grande importância para a determinação das coordenadas geográficas. São responsáveis pelo estabelecimento: </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Altitudes</li>
+            <li data-option="B" data-correct="true">B) Latitudes</li>
+            <li data-option="C">C) Longitudes</li>
+            <li data-option="D">D) Pontos Cardeais</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
     </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. Os meridianos são responsáveis pela composição das coordenadas geográficas por representarem as longitudes. Qual outro importante instrumento geográfico é estabelecido por essas linhas imaginárias? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Hemisfério Sul</li>
+            <li data-option="B">B) Cartografia</li>
+            <li data-option="C" data-correct="true">C) Fusos Horários</li>
+            <li data-option="D">D) Cardeais</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. São as linhas imaginárias dispostas verticalmente sobre o globo terrestre, formando semicírculos, ou seja, curvas que representam a metade de um círculo.” O conceito estabelecido no enunciado faz referência: </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Meredianos</li>
+            <li data-option="B">B) Latitudes</li>
+            <li data-option="C">C) Paralelos</li>
+            <li data-option="D">D) Longitudes</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Em qual idade geológica ocorreu a formação da Terra? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Mesozoica</li>
+            <li data-option="B">B) Cenozoica</li>
+            <li data-option="C">C) Cambriana</li>
+            <li data-option="D" data-correct="true">D) Pre-Cambriana</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5.  A Terra é um dos planetas que compõem o Sistema Solar. Eles orbitam em torno do Sol e têm características específicas. Quantos são os planetas que formam o Sistema Solar?  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) 9</li>
+            <li data-option="B" data-correct="true">B) 8</li>
+            <li data-option="C">C) 6</li>
+            <li data-option="D">D) 7</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    
+
 </section>
-
-
 
 
 
@@ -146,9 +170,10 @@
   </div>
 </footer>
 
+
 <!-- codigos javascript  -->
- <script src="../../js/kanban.js"></script>
 <script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
 
    
 </body>

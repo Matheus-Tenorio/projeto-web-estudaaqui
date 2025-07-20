@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+    <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+   
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
+
+    <h1 class="heading">Quiz de Português 🧠</h1>
+
+    <div class="quiz-question">
+        <h3 class="question-title">1. Existe hoje uma única definição aceita para o que é Filosofia? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Sim, não pela academia, mas pelo senso comum</li>
+            <li data-option="B" data-correct="true">B) Não, são várias as definição</li>
+            <li data-option="C">C) Sim, o tema foi unificado pela academia</li>
+            <li data-option="D">D) N.D.A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. O termo Filosofia quer dizer amigo do saber? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Não, significa uma critica ao saber</li>
+            <li data-option="B">B) Não existe um significado para isso</li>
+            <li data-option="C" data-correct="true">C) Sim, uma espécie de amigo da sabedoria</li>
+            <li data-option="D">D) N.D.A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. Os filósofos começaram a filosofar devido a uma atitude de?  </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Espanto, estranhamento e encantamento</li>
+            <li data-option="B">B) Critica, encantamento e afeto</li>
+            <li data-option="C">C) Coragem, espanto e critica</li>
+            <li data-option="D">D) encantamento, sabedoria, ilusão</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Qual filósofo grego é considerado o pai da filosofia ocidental? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Aristóteles</li>
+            <li data-option="B">B) Tales de Mileto</li>
+            <li data-option="C">C) Platão</li>
+            <li data-option="D" data-correct="true">D) Sócrates</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. Qual filósofo é conhecido por sua teoria do "Mito da Caverna"? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Aristóteles</li>
+            <li data-option="B" data-correct="true">B) Platão</li>
+            <li data-option="C">C) Diógenes</li>
+            <li data-option="D">D) Maquiavel</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">6. Qual filósofo é conhecido por sua teoria do "Cogito, ergo sum" (Penso, logo existo)? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Maquiavel</li>
+            <li data-option="B">B) Socrates</li>
+            <li data-option="C" data-correct="true">C) Descartes</li>
+            <li data-option="D">D) Platão</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">7. Qual filósofo alemão é conhecido por suas ideias sobre a alienação do trabalho e a luta de classes? </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Marx</li>
+            <li data-option="B">B) Kafka</li>
+            <li data-option="C">C) Aristóteles</li>
+            <li data-option="D">D) Maquiavel</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+
+<!-- codigos javascript  -->
+<script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
+
+   
+</body>
+</html>

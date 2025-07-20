@@ -6,9 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Página Inicial</title>
 
-   <!-- link para a fonte usada -->
+    <!-- link para a fonte usada -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
+
+   
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" href="../../css/body.css">
@@ -26,9 +28,9 @@
     <link rel="stylesheet" href="../../css/teachersprofile.css">
     <link rel="stylesheet" href="../../css/usersprofile.css">
     <link rel="stylesheet" href="../../css/videos.css">
-   
 
-    <script src="js/kanban.js" defer></script>
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
 
 </head>
 <body>
@@ -90,52 +92,72 @@
 </div>
 
 
-<!-- CORPO principal-->
-<section class="user-profile">
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
 
-   <h1 class="heading">Seu perfil</h1>
+    <h1 class="heading">Quiz de Português 🧠</h1>
 
-   <div class="info">
-
-      <div class="user">
-         <img src="images/pic-1.jpg" alt="">
-         <h3>NOME AQUI</h3>
-         <p>estudante</p>
-         <a href="update.html" class="inline-btn">atualizar perfil</a>
-      </div>
-
-   </div>
-
-</section>
-
-
-<section>
-
-   <h2 class="heading">Quadro Kanban</h2>
-
-   <div class="board">
-      <form id="todo-form">
-        <input type="text" placeholder="Nova Tarefa..." id="todo-input" />
-        <button type="submit">Adicionar +</button>
-      </form>
-
-      <div class="lanes">
-        <div class="swim-lane" id="todo-lane">
-          <h3 class="heading">A FAZER</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FAZENDO</h3>
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">FEITO</h3>
-        </div>
-      </div>
+    <div class="quiz-question">
+        <h3 class="question-title">1. Qual é o principal objetivo da Sociologia como ciência?</h3>
+        <ul class="options-list">
+            <li data-option="A">A) Estudar os processos químicos do corpo humano</li>
+            <li data-option="B" data-correct="true">B)  Compreender as relações sociais e estruturas da sociedade</li>
+            <li data-option="C">C)  Investigar os fenômenos naturais do planeta</li>
+            <li data-option="D">D)Analisar o comportamento individual isolado </li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
     </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2.  Quem é considerado o “pai da Sociologia”?</h3>
+        <ul class="options-list">
+            <li data-option="A">A) Karl Marx </li>
+            <li data-option="B">B) Max Weber</li>
+            <li data-option="C" data-correct="true">C) Auguste Comte</li>
+            <li data-option="D">D) Émile Durkheim</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. Segundo Karl Marx, a história da sociedade é a história de:</h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Lutas de classes</li>
+            <li data-option="B">B) Evolução natural da humanidade</li>
+            <li data-option="C">C) Desenvolvimento tecnológico</li>
+            <li data-option="D">D) Revoluções científicas</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. O que Émile Durkheim entendia por “fato social”? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Uma emoção sentida por uma pessoa</li>
+            <li data-option="B">B) Uma opinião política</li>
+            <li data-option="C">C) A dominação militar nas sociedades</li>
+            <li data-option="D" data-correct="true">D) Um fenômeno coletivo com coerção sobre os indivíduos</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. Qual é o foco central da teoria sociológica de Max Weber? </h3>
+        <ul class="options-list">
+            <li data-option="A">A)A biologia como fator determinante do comportamento </li>
+            <li data-option="B" data-correct="true">B) A ação social e o sentido atribuído pelos indivíduos às suas açõe</li>
+            <li data-option="C">C) A economia global</li>
+            <li data-option="D">D) A dominação militar nas sociedades</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
 </section>
-
-
 
 
 
@@ -146,9 +168,10 @@
   </div>
 </footer>
 
+
 <!-- codigos javascript  -->
- <script src="../../js/kanban.js"></script>
 <script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
 
    
 </body>

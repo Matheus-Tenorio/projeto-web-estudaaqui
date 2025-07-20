@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+    <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+   
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+
+    <link rel="stylesheet" href="../../css/quiz.css">
+   
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="quiz-container">
+
+    <h1 class="heading">Quiz de Português 🧠</h1>
+
+    <div class="quiz-question">
+        <h3 class="question-title">1. Qual das vitaminas abaixo é responsável pela coagulação do sangue em nosso metabolismo? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Vitamina C</li>
+            <li data-option="B" data-correct="true">B) Vitamina K</li>
+            <li data-option="C">C) Vitamina D</li>
+            <li data-option="D">D) Vitamina A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">2. Qual das alternativas abaixo representa a nutrição da célula pela emissão de pseudópodes? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) N.D.A</li>
+            <li data-option="B">B) Isotônica</li>
+            <li data-option="C" data-correct="true">C) Hipertônica</li>
+            <li data-option="D">D) Hipotônica</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">3. E qual processo representa a secreção dessas substâncias? </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Clasmocitose</li>
+            <li data-option="B">B) Endocitose</li>
+            <li data-option="C">C) Pinocitose</li>
+            <li data-option="D">D) N.D.A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">4. Qual tipo de Transporte equaliza as soluções das células pela ação da água?  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Difusão Simples</li>
+            <li data-option="B">B) Difusão Facilitada</li>
+            <li data-option="C">C) Meiose</li>
+            <li data-option="D" data-correct="true">D) Osmose</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">5. Sobre a passagem das substâncias pela membrana plasmática, qual Transporte ocorre a favor do gradiente de concentração? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Transporte Ativo</li>
+            <li data-option="B" data-correct="true">B) Transporte Passivo</li>
+            <li data-option="C">C) Não fornece Transporte</li>
+            <li data-option="D">D) N.D.A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">6. Sobre as funções dos lipídios, eles não agem como:  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Isolante</li>
+            <li data-option="B">B) Impermiabilizante</li>
+            <li data-option="C" data-correct="true">C) Moléculas polares</li>
+            <li data-option="D">D) Energia</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">7. Qual das alternativas abaixo é responsável por controlar e regular funções celulares além de servir defesa para o organismo?  </h3>
+        <ul class="options-list">
+            <li data-option="A" data-correct="true">A) Proteinas</li>
+            <li data-option="B">B) Carboidratos</li>
+            <li data-option="C">C) Lipídios</li>
+            <li data-option="D">D) N.D.A</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">8. E qual serve de estimulante para os batimentos cardíacos e o funcionamento dos nervos? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Ferro</li>
+            <li data-option="B">B) Enxofre</li>
+            <li data-option="C" data-correct="true">C) Potássio</li>
+            <li data-option="D">D) Iodo</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">9. Qual das substâncias inorgânicas abaixo influencia especialmente na formação da estrutura óssea? </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Ferro</li>
+            <li data-option="B">B) Magnésio</li>
+            <li data-option="C">C) Flúor</li>
+            <li data-option="D" data-correct="true">D) Fósforo</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    <div class="quiz-question">
+        <h3 class="question-title">10. Quais das vitaminas abaixo podem ser consideradas hidrossolúveis?  </h3>
+        <ul class="options-list">
+            <li data-option="A">A) Vitaminas A e B</li>
+            <li data-option="B" data-correct="true">B) Vitaminas B e C</li>
+            <li data-option="C">C) Vitaminas K e E</li>
+            <li data-option="D">D) Vitaminas C e D</li>
+        </ul>
+        <button class="validate-btn">Validar Resposta</button>
+        <p class="feedback-message"></p>
+    </div>
+
+    
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+
+<!-- codigos javascript  -->
+<script src="../../js/script.js"></script>
+<script src="../../js/quiz.js"></script>
+
+   
+</body>
+</html>
