@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="../../css/buttons.css">
     <link rel="stylesheet" href="../../css/comments.css">
     <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/content.css">
     <link rel="stylesheet" href="../../css/coursers.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/formcontainer.css">
@@ -22,11 +24,13 @@
     <link rel="stylesheet" href="../../css/homegrid.css">
     <link rel="stylesheet" href="../../css/kanban.css">
     <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/selectcontent.css">
+    <link rel="stylesheet" href="../../css/selectquiz.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/teachersprofile.css">
     <link rel="stylesheet" href="../../css/usersprofile.css">
     <link rel="stylesheet" href="../../css/videos.css">
-   
+    
 
 </head>
 <body>
@@ -88,114 +92,54 @@
 </div>
 
 
-<!-- CORPO PRINCIPAL-->
-<section class="courses">
+<!-- CORPO PRINCIPAL -->
+<section class="teachers">
 
-   <h1 class="heading">Todas as Disciplinas</h1>
+   <h1 class="heading">Conteúdos de Matemática</h1>
 
-   <div class="box-container">
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="procurar conteúdos..." required maxlength="100">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
 
-      <!-- DISCIPLINAS 1-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/matematica.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Matemática</h3>
-         <a href="matematicaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
+  <main class="content">
+    <section>
+      <h2>O que é função afim?</h2>
+      <br>
+      <text>
+            A função afim, também chamada de função do 1º grau, é uma função definida por:
+            começar estilo tamanho matemático 18px reto f parêntese esquerdo reto x parêntese direito igual a ax espaço mais espaço reto b fim do estilo
+            Sendo a e b números reais.
+      </text>
+      <text>
+            Neste tipo de função, o número a é chamado de coeficiente de x e representa a taxa de crescimento ou taxa de variação da função. O "a" determina a inclinação da reta.
 
-      <!-- DISCIPLINAS 2-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/portugues.avif" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Português</h3>
-         <a href="quizPortugues.html" class="inline-btn">visualizar</a>
-      </div>
+            Já o número b é chamado de coeficiente linear, sendo um termo constante. Ele representa o ponto de intersecção da reta com o eixo y das ordenadas.
 
-      <!-- DISCIPLINAS 3-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/fisica.png" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Física</h3>
-         <a href="quizFisica.html" class="inline-btn">visualizar</a>
-      </div>
+            A função afim é representada graficamente por uma reta no plano cartesiano.
+      </text>
+      <p>Exemplos de função afim:</p>    
+      <pre>
+            f(x) = x + 5, (com a = 1 e b = 5);
 
-      <!-- DISCIPLINAS 4-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/quimica.png" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Química</h3>
-        <a href="quizQuimica.html" class="inline-btn">visualizar</a>
-      </div>
+            g(x) = 3√3x - 8, (com a =3√3 e b = -8);
 
-      <!-- DISCIPLINAS 5-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/biologia.png" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Biologia</h3>
-         <a href="quizBiologia.html" class="inline-btn">visualizar</a>
-      </div>
+            h(x) = 1/2x, (com a =1/2 e b = 0);
+      </pre>
+      <text>
+            Toda função afim possui como conjunto domínio os números reais, assim como seu contradomínio, f : ℝ→ℝ. Ainda, nas funções afins, o conjunto imagem é igual ao contradomínio
+      </text>
+    </section>
 
-      <!-- DISCIPLINAS 6-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/historia.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">História</h3>
-         <a href="quizHistoria.html" class="inline-btn">visualizar</a>
-      </div>
+ 
+    </section>
+  </main>
 
-      <!-- DISCIPLINAS 7-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/geografia.webp" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Geografia</h3>
-         <a href="quizGeografia.html" class="inline-btn">visualizar</a>
-      </div>
 
-      <!-- DISCIPLINAS 8-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/filosofia.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Filosofia</h3>
-         <a href="quizFilosofia.html" class="inline-btn">visualizar</a>
-      </div>
 
-      <!-- DISCIPLINAS 9-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/sociologia.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Sociologia</h3>
-         <a href="quizSociologia.html" class="inline-btn">visualizar</a>
-      </div>
 
-      <!-- DISCIPLINAS 10-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/redacao.webp" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Redação</h3>
-         <a href="#" class="inline-btn">visualizar</a>
-      </div>
 
-   </div>
+
 
 </section>
 
@@ -219,7 +163,7 @@
   </div>
 </footer>
 
-<!-- codigos js  -->
+<!-- codigos javascript  -->
 <script src="../../js/script.js"></script>
 
    
