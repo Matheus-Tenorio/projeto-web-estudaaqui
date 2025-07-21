@@ -1,0 +1,17 @@
+
+
+.select-quiz {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    margin-top: 10px;
+}
+
+.select-quiz h2{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
