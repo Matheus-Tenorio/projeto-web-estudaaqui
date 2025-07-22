@@ -1,0 +1,182 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+   <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/selectcontent.css">
+    <link rel="stylesheet" href="../../css/selectquiz.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+    
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="teachers">
+
+   <h1 class="heading">Leis de Newton</h1>
+
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="procurar conteúdos..." required maxlength="100">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
+
+  <main class="content">
+    <section>
+      <h2>1 lei</h2>
+      <text>
+        "Essa lei diz que, ao menos que haja alguma força resultante não nula sobre um corpo, esse deverá manter-se em repouso ou se mover ao longo de uma linha reta com velocidade constante. A Lei de Inércia também explica o surgimento das forças inerciais, isto é, as forças que surgem quando os corpos estão sujeitos a alguma força capaz de produzir neles uma aceleração. Por exemplo: ao pisar no acelerador do carro, um motorista pode sentir-se comprimido em seu banco, como se houvesse uma força puxando-o para trás. Na verdade, o que ele sente é a expressão de sua inércia, ou seja, a tendência que seu corpo tem de permanecer parado ou em velocidade constante.
+
+Além disso, quanto maior for a massa de um corpo, maior será sua inércia. Assim, alterar o estado de movimento de um corpo de massa grande requer a aplicação de uma força maior. Corpos de massa pequena têm seu estado de movimento alterado facilmente com a aplicação de forças menos intensas.
+
+"
+
+      </text>  
+    </section>
+
+    <section>
+      <h2>2 lei</h2>
+      <text>
+        "Essa lei informa que o módulo da aceleração produzida sobre um corpo é diretamente proporcional ao módulo da força aplicada sobre ele e inversamente proporcional à sua massa. Essa lei é apresentada na equação abaixo:
+
+As forças são grandezas vetoriais, portanto, são escritas com uma seta apontada sempre para direita acima de seu símbolo. Essa seta não indica o módulo ou a direção da grandeza vetorial, indica somente que elas são vetoriais. De acordo com a Segunda Lei de Newton, a força resultante aplicada sobre um corpo produz nele uma aceleração na mesma direção e sentido da força resultante:"
+
+
+      </text>  
+    </section>
+
+    <section>
+      <h2>3 lei</h2>
+      <text>
+        "A Terceira Lei de Newton recebe o nome de Lei da Ação e Reação. Essa lei diz que todas as forças surgem aos pares: ao aplicarmos uma força sobre um corpo (ação), recebemos desse corpo a mesma força (reação), com mesmo módulo e na mesma direção, porém com sentido oposto. O enunciado original da Terceira Lei de Newton encontra-se traduzido abaixo:
+
+“A toda ação há sempre uma reação oposta e de igual intensidade: as ações mútuas de dois corpos um sobre o outro são sempre iguais e dirigidas em sentidos opostos.”
+
+Essa lei permite-nos entender que, para que surja uma força, é necessário que dois corpos interajam, produzindo forças de ação e reação. Além disso, é impossível que um par de ação e reação forme-se no mesmo corpo.
+
+Outra informação contida no enunciado da Terceira Lei de Newton indica que os pares de ação e reação têm a mesma intensidade, mesma direção, porém sentidos opostos. Assim, se produzirmos uma força direcionada para baixo sobre um corpo, receberemos dele uma força de reação direcionada para cima. Por exemplo: se estivermos usando patins e empurrarmos um carrinho de supermercado lotado de compras, seremos empurrados para trás, em decorrência da fraca intensidade da força de atrito entre as rodas dos patins e o piso."
+
+
+      </text>  
+    </section>
+  </main>
+
+  
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+<!-- codigos javascript  -->
+<script src="../../js/script.js"></script>
+
+   
+</body>
+</html>

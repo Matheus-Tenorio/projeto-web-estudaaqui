@@ -1,0 +1,184 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Inicial</title>
+
+   <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/selectcontent.css">
+    <link rel="stylesheet" href="../../css/selectquiz.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+    
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+<section class="teachers">
+
+   <h1 class="heading">Tomás de Aquino</h1>
+
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="procurar conteúdos..." required maxlength="100">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
+
+  <main class="content">
+    <section>
+      <h2>Quem foi  Tomás de Aquino?</h2>
+        <text>
+            "Tomás de Aquino foi um padre católico e discípulo do grande escolástico Alberto Magno. Ele auxiliou na reintrodução da filosofia aristotélica no pensamento europeu e atualizou a teologia cristã junto à filosofia medieval, tendo escrito sobre os conflitos entre fé e razão existentes no período.
+        </text>
+    </section>
+
+    <section>
+        <text>
+            "Aquino é o maior representante da Escolástica, pensamento desenvolvido em um momento de expansão e grande domínio católico na Europa. Havia, no século XIII, uma iminente necessidade de formação de novos líderes religiosos, o que impulsionou a formação de escolas e universidades cristãs para a formação de novos sacerdotes para a Idade Média. As universidades mais antigas do mundo datam dessa época. Tomás de Aquino formou-se e lecionou em universidades cristãs desse período.
+
+Suas principais influências são, de um lado, Platão e Santo Agostinho (que pode ser considerado um neoplatônico) e, de outro, Alberto Magno e Aristóteles (que representa o pensamento filosófico grego dominante durante a Escolástica)."
+
+
+        </text>
+    </section>
+
+    <section>
+        <text>
+            "Para Aquino, a identidade (princípio fundamental da lógica aristotélica) era o elo fundamental que, ao conectar a existência e a essência, mostrava o toque divino. A perfeição divina era capaz de alcançar e de explicar essa relação tão obscura e intrigante.
+
+Baseado na filosofia aristotélica, Tomás de Aquino desenvolveu as Cinco Vias que Provam a Existência de Deus, uma espécie de regressão causal que, em todos os casos (nos cinco argumentos), Deus é o princípio. As cinco vias são dispostas desta maneira:
+
+O movimento do motor primeiro: em todo o universo, há movimento. Aristóteles propõe que para o movimento, existe um movente (motor), que dá a propulsão e o movimento ao corpo movido. Se fôssemos procurar cada movente de cada movimento, sem conjecturar a existência de um primeiro motor que não foi movido por ninguém, faríamos um movimento ad infinitum e não encontraríamos a causa primeira. Portanto, é necessário pensar que há uma causa primeira (motor imóvel) que colocou o primeiro movimento em tudo.
+
+A causa não causada, ou a primeira causa eficiente: partindo da mesma reflexão que foi desenvolvida na primeira via, é necessário entender que tudo foi causado no mundo, exceto uma primeira causa. Essa é a causa prima e ela não teve evento anterior. Foi um primeiro momento em que uma primeira coisa aconteceu. Essa causa não causada é Deus.
+
+Ser necessário e seres possíveis: os conceitos de necessidade e possibilidade estão em jogo. Existem seres possíveis, que podem ou não existir. Existem os seres necessários, que, independentemente das contingências, existem. Os seres contingentes são gerados, existem e são extintos (deixam de existir). Eles estão em transformação contínua. Porém, existe um ser que é. Do mesmo modo que é, sempre foi e sempre será. Esse é o ser necessário e Ele é Deus.
+
+Graus de perfeição: baseando-se na filosofia platônica, Aquino classifica diferentes graus de perfeição existente entre os seres. Existe uma espécie de hierarquia entre os graus de perfeição que pode classificar seres entre a bondade e a nobreza, por exemplo. Para Tomás de Aquino, se há essa hierarquia, deve haver um padrão de excelência que serve para a correção dos seres mais evoluídos. Esse padrão é Deus.
+
+Governo supremo: há uma organização das coisas e dos seres materiais. Os corpos, mesmo que inconscientemente, orientam-se para um fim. Essa ordenação é um governo supremo, ordenado por Deus."
+
+
+        </text>
+    </section>
+  </main>
+
+  
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+<!-- codigos javascript  -->
+<script src="../../js/script.js"></script>
+
+   
+</body>
+</html>
