@@ -1,0 +1,50 @@
+.pomodoro {
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #000;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.pomodoro h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.pomodoro .timer-display {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+.pomodoro .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pomodoro .btn {
+  background: #27ae60;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+
+.pomodoro .btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.pomodoro .btn:hover:not(:disabled) {
+  background: #2ecc71;
+}
