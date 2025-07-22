@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,11 +23,13 @@
     <link rel="stylesheet" href="../../css/homegrid.css">
     <link rel="stylesheet" href="../../css/kanban.css">
     <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/selectcontent.css">
+    <link rel="stylesheet" href="../../css/selectquiz.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/teachersprofile.css">
     <link rel="stylesheet" href="../../css/usersprofile.css">
     <link rel="stylesheet" href="../../css/videos.css">
-   
+    
 
 </head>
 <body>
@@ -88,113 +91,30 @@
 </div>
 
 
-<!-- CORPO PRINCIPAL-->
-<section class="courses">
+<!-- CORPO PRINCIPAL -->
+<section class="teachers">
 
-   <h1 class="heading">Todas as Disciplinas</h1>
+   <h1 class="heading">Conteúdos de Sociologia</h1>
 
-   <div class="box-container">
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="procurar conteúdos..." required maxlength="100">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
 
-      <!-- DISCIPLINAS 1-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/matematica.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Matemática</h3>
-         <a href="matematicaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
 
-      <!-- DISCIPLINAS 2-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/portugues.avif" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Português</h3>
-         <a href="portuguesContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
 
-      <!-- DISCIPLINAS 3-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/fisica.png" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Física</h3>
-         <a href="fisicaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
+  
 
-      <!-- DISCIPLINAS 4-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/quimica.png" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Química</h3>
-        <a href="quimicaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
-      <!-- DISCIPLINAS 5-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/biologia.png" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Biologia</h3>
-         <a href="biologiaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
-      <!-- DISCIPLINAS 6-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/historia.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">História</h3>
-         <a href="historiaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
-      <!-- DISCIPLINAS 7-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/geografia.webp" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Geografia</h3>
-         <a href="geografiaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
-      <!-- DISCIPLINAS 8-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/filosofia.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Filosofia</h3>
-         <a href="filosofiaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
-      <!-- DISCIPLINAS 9-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/sociologia.jpg" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Sociologia</h3>
-         <a href="sociologiaContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
-      <!-- DISCIPLINAS 10-->
-      <div class="box">
-         <div class="thumb">
-            <img src="images/redacao.webp" alt="">
-            <span>+100 conteudos</span>
-         </div>
-         <h3 class="title">Redação</h3>
-         <a href="redacaoContentSelector.html" class="inline-btn">visualizar</a>
-      </div>
-
+   <div class="select-content">
+      <h2>Karl Marx</h2>
+      <p>Conceitos Fundamentais</p>
+      <a href="sociologiaContentMarx.html" class="inline-btn">Ler</a>
+   </div>
+   
+   <div class="select-content">
+      <h2>Augusto Comte</h2>
+      <p>Conceitos Fundamentais</p>
+      <a href="sociologiaContentComte.html" class="inline-btn">Ler</a>
    </div>
 
 </section>
@@ -219,7 +139,7 @@
   </div>
 </footer>
 
-<!-- codigos js  -->
+<!-- codigos javascript  -->
 <script src="../../js/script.js"></script>
 
    
