@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ferramentas</title>
+
+    <!-- link para a fonte usada -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+   
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+    <link rel="stylesheet" href="../../css/comments.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/coursers.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formcontainer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/homegrid.css">
+    <link rel="stylesheet" href="../../css/kanban.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/teachersprofile.css">
+    <link rel="stylesheet" href="../../css/usersprofile.css">
+    <link rel="stylesheet" href="../../css/videos.css">
+    <link rel="stylesheet" href="../../css/calculadora.css">
+    <link rel="stylesheet" href="../../css/conversor.css">
+    <link rel="stylesheet" href="../../css/temperatura.css">
+    <link rel="stylesheet" href="../../css/pomodoro.css">
+    
+    
+
+
+
+</head>
+<body>
+
+   <!-- CABEÇALHO / MENU SUPERIOR -->
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">EstudaAqui</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="procurar..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nome do estudante</h3>
+         <a href="profile.html" class="btn">visualizar perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">registrar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<!-- MENU LATERAL -->
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nome do estudante</h3>
+      <a href="profile.html" class="btn">visualizar perfil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Pagina Inicial</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Sobre Nós</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Disciplinas</span></a>
+      <a href="exercises.html"><i class="fas fa-chalkboard-user"></i><span>Desafios</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+   </nav>
+
+</div>
+
+
+<!-- CORPO PRINCIPAL -->
+
+<section class="container calculadora">
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="btn special">C</button>
+      <button onclick="appendOperator('/')" class="btn">÷</button>
+      <button onclick="appendOperator('*')" class="btn">×</button>
+      <button onclick="appendOperator('-')" class="btn">−</button>
+
+      <button onclick="appendNumber('7')" class="btn">7</button>
+      <button onclick="appendNumber('8')" class="btn">8</button>
+      <button onclick="appendNumber('9')" class="btn">9</button>
+      <button onclick="appendOperator('+')" class="btn">+</button>
+
+      <button onclick="appendNumber('4')" class="btn">4</button>
+      <button onclick="appendNumber('5')" class="btn">5</button>
+      <button onclick="appendNumber('6')" class="btn">6</button>
+      <button onclick="calculateResult()" class="btn equal">=</button>
+
+      <button onclick="appendNumber('1')" class="btn">1</button>
+      <button onclick="appendNumber('2')" class="btn">2</button>
+      <button onclick="appendNumber('3')" class="btn">3</button>
+
+      <button onclick="appendNumber('0')" class="btn zero">0</button>
+      <button onclick="appendNumber('.')" class="btn">.</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="container conversor">
+  <h2>Conversor de Comprimento</h2>
+
+  <form id="length-form">
+    <input type="number" id="length-value" placeholder="Digite o valor" required>
+
+    <div class="select-group">
+      <select id="from-length">
+        <option value="m">Metro (m)</option>
+        <option value="km">Quilômetro (km)</option>
+        <option value="cm">Centímetro (cm)</option>
+        <option value="mm">Milímetro (mm)</option>
+        <option value="in">Polegada (in)</option>
+      </select>
+
+      <span>→</span>
+
+      <select id="to-length">
+        <option value="m">Metro (m)</option>
+        <option value="km">Quilômetro (km)</option>
+        <option value="cm">Centímetro (cm)</option>
+        <option value="mm">Milímetro (mm)</option>
+        <option value="in">Polegada (in)</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn">Converter</button>
+  </form>
+
+  <div id="length-result" class="result">Resultado: <span>-</span></div>
+</section>
+
+
+<section class="container conversor">
+  <h2>Conversor de Temperaturas</h2>
+
+  <form id="temp-form">
+    <input type="number" id="temp-value" placeholder="Digite o valor" required>
+
+    <div class="select-group">
+      <select id="from-temp">
+        <option value="C">Celsius (°C)</option>
+        <option value="F">Fahrenheit (°F)</option>
+        <option value="K">Kelvin (K)</option>
+      </select>
+
+      <span>→</span>
+
+      <select id="to-temp">
+        <option value="C">Celsius (°C)</option>
+        <option value="F">Fahrenheit (°F)</option>
+        <option value="K">Kelvin (K)</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn">Converter</button>
+  </form>
+
+  <div id="temp-result" class="result">Resultado: <span>-</span></div>
+</section>
+
+<section class="container pomodoro">
+  <h2>Timer Pomodoro</h2>
+
+  <div class="timer-display" id="timer">25:00</div>
+
+  <div class="buttons">
+    <button id="start-btn" class="btn">Iniciar</button>
+    <button id="pause-btn" class="btn" disabled>Pausar</button>
+    <button id="reset-btn" class="btn">Resetar</button>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <span>EstudaAqui</span>. Todos os direitos reservados.</p>
+    <p>Desenvolvido para atender a SUA nescessidade.</p>
+  </div>
+</footer>
+
+
+<!-- codigos javascript  -->
+ <script src="../../js/calculadora.js"></script>
+<script src="../../js/script.js"></script>
+<script src="../../js/conversor.js"></script>
+<script src="../../js/temperatura.js"></script>
+ <script src="../../js/pomodoro.js"></script>
+
+
+
+   
+</body>
+</html>
